@@ -13,7 +13,7 @@ public class Calculations {
         int addition = numOne + numTwo;
         int subtraction = numOne - numTwo;
         int multiplication = numOne * numTwo;
-        double division = numOne / numTwo;
+        double division = double.valueOf(numOne) / double.valueOf(numTwo);
         int modulus = numOne % numTwo;
 
         System.out.println("Addition: " + numOne + " + " + numTwo + " = " + addition);
@@ -23,3 +23,4 @@ public class Calculations {
         System.out.println("Modulus: " + numOne + " % " + numTwo + " = " + modulus);
     }
 }
+
