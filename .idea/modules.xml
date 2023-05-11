@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignments/assignments.iml" filepath="$PROJECT_DIR$/assignments/assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculations/calculations.iml" filepath="$PROJECT_DIR$/calculations/calculations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/casting/casting.iml" filepath="$PROJECT_DIR$/casting/casting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conditional-statements/conditional-statements.iml" filepath="$PROJECT_DIR$/conditional-statements/conditional-statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-practice.iml" filepath="$PROJECT_DIR$/.idea/java-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicing-loops/practicing-loops.iml" filepath="$PROJECT_DIR$/practicing-loops/practicing-loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print-practice/print-practice.iml" filepath="$PROJECT_DIR$/print-practice/print-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scanner-assignment/scanner-assignment.iml" filepath="$PROJECT_DIR$/scanner-assignment/scanner-assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing/testing.iml" filepath="$PROJECT_DIR$/testing/testing.iml" />
+    </modules>
+  </component>
+</project>
