@@ -9,6 +9,18 @@ public class BookMain {
         System.out.println("Library: \n" +
                 "Entering nothing will stop the loop");
 
+        Book book1 = new Book("A Court Of Thorns And Roses", 419, 2015);
+        Book book2 = new Book("A Court Of Mist And Fury", 626, 2016);
+        Book book3 = new Book("A Court Of Wings And Ruin", 699, 2017);
+        Book book4 = new Book("A Court Of Frost And Starlight", 299, 2018);
+        Book book5 = new Book("A Court Of Silver Flames",768, 2021);
+
+        books.add(book1);
+        books.add(book2);
+        books.add(book3);
+        books.add(book4);
+        books.add(book5);
+
         while(true) {
             System.out.println("Name a book you like: ");
             String title = scanner.nextLine();
