@@ -118,7 +118,16 @@ public class Main {
 
         System.out.println(library.getBook("SENSE"));
 
+        //primitive in hash maps
+        HashMap<Integer, String> hashmap = new HashMap<>();
+        hashmap.put(1, "Ole!");
+//        HashMap<int, String> map2 = new HashMap<>(); //will not work
 
+        int key = 2;
+        HashMap<Integer, Integer> hashmap1 = new HashMap<>();
+        hashmap1.put(key, 10);
+        int value = hashmap1.get(key);
+        System.out.println(value);
 
     }
 
@@ -131,6 +140,21 @@ public class Main {
         return null;
     }
 
+//going through hash map value
+public ArrayList<Book> getBookByPart(String titlePart) {
+    titlePart = sanitizedString(titlePart);
 
+    ArrayList<Book> books = new ArrayList<>();
+
+//    for(Book book : this.directory.values()) {
+//        if(!book.getName().contains(titlePart)) {
+//            continue;
+//        }
+//
+//        books.add(book);
+//    }
+
+    return books;
+}
 
 }
