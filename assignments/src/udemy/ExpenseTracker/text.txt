@@ -1,0 +1,33 @@
+Project Title: "Expense Tracker"
+
+Description:
+Create a command-line expense tracker that allows users to track their expenses.
+The expense tracker should allow users to add expenses, view expenses,
+calculate total expenses, and generate expense reports.
+
+Requirements:
+
+1. Create a class named Expense that represents an expense with attributes
+    like date, category, amount, and description.
+
+2. Create a class named ExpenseTracker that manages the expenses. It should have methods to
+    add expenses, view expenses, calculate total expenses, and generate expense reports.
+
+3. Implement a menu-based user interface where users can interact with the expense tracker system
+    by entering commands.
+
+4. The menu should include options to add an expense, view expenses, calculate total expenses,
+    and generate an expense report.
+
+5. Handle user input and perform the corresponding operations based on the selected menu option.
+
+6. Use appropriate data structures (e.g., ArrayList or HashMap) to store and manage the expenses.
+
+7. Add error handling to handle invalid user input or situations where an expense is not found.
+
+8. Provide a way for users to exit the program.
+
+You can start by creating the Expense and ExpenseTracker classes, implementing the basic functionality,
+and then gradually add more features and improvements. For example, you could add the ability to filter
+expenses by date or category, generate expense reports in different formats (e.g., CSV or PDF), or
+implement data persistence by saving expenses to a file.
