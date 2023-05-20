@@ -2,6 +2,14 @@ package CodingBat;
 
 public class Recursion1 {
 
+    public static void main(String[] args) {
+        //testing
+        Recursion1 tester = new Recursion1();
+
+        System.out.println("Return the factorial of 5: " + tester.factorial(7));
+        System.out.println("If there are 17 bunnies, how many bunny ears are there total? " + tester.bunnyEars(17));
+    }
+
     /*1
      *Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ...
      * 1. Compute the result recursively (without loops). */

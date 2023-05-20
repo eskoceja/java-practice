@@ -1,6 +1,19 @@
 package CodingBat;
 
 public class String1 {
+
+    public static void main(String[] args) {
+        //testing
+        String1 tester = new String1();
+
+        System.out.println("What's your name? " + tester.helloName("Emily"));
+        System.out.println("I can speak robot, watch: " + tester.makeAbba("boop", "beep"));
+        System.out.println("The is how you make something italicized in HTML: " + tester.makeTags("i", "Why is it spicy?"));
+        System.out.println("Are you laughing at me? " + tester.extraEnd("aloha"));
+        System.out.println("Hey! I said stop laughing! Do you not speak English? " + tester.firstTwo("jacuzzi"));
+
+    }
+
     /*1
     *
     Given a string name, e.g. "Bob",

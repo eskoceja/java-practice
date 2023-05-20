@@ -1,6 +1,24 @@
 package CodingBat;
 
+import java.util.Arrays;
+
 public class Array1 {
+
+    public static void main(String[] args) {
+        //testing
+        Array1 tester = new Array1();
+
+        int[] intArray = {1, 2, 3, 4, 5, 6};
+        System.out.println("Is there a 6 in the array? " + tester.firstLast6(intArray));
+        System.out.println("Does this array have the same beginning and end int? " + tester.sameFirstLast(intArray));
+
+        int[] piArray = makePi();
+        System.out.println("PI array: " + Arrays.toString(piArray));
+
+        System.out.println("Do the two array have a common end? " + tester.commonEnd(intArray, piArray));
+        System.out.println("What is the sum of 3 + 1 + 4? " + tester.sum3(piArray));
+
+    }
 
     /*1
      * Given an array of ints, return true if 6 appears as
@@ -28,7 +46,7 @@ public class Array1 {
 
     /*3
      * Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.*/
-    public int[] makePi() {
+    public static int[] makePi() {
         int[] PI = {3, 1, 4};       //made an array of the first three numbers in PI
         return PI;                  //returned that array
     }

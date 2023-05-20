@@ -2,6 +2,22 @@ package CodingBat;
 
 public class Logic1 {
 
+    public static void main(String[] args) {
+        //testing
+        Logic1 tester = new Logic1();
+
+        System.out.println("Was the squirrel cigar party successful? " + tester.cigarParty(57, true));
+        System.out.println("My husband and I want to go to Let's Meat and we dressed up. Will we get a table? \n" +
+                "0 = no, 1 = maybe, 2 = fosho! So? " + tester.dateFashion(8, 9));
+        System.out.println("These squirrels always up to something. Are they playing right now? " + tester.squirrelPlay(73, false));
+        System.out.println("What are my chances of getting a speeding ticket if I am driving 70mph? \n" +
+                "0 = no change, 1 = you may get one, 2 = yes you speeder. So? " + tester.caughtSpeeding(70, false));
+        System.out.println("What is 1 + 14? " + tester.sortaSum(1, 14) + " Yeah, no. That's sorta summin' but not really.");
+        System.out.println("Alexa, what time is my alarm set for tomorrow? Alexa: Your alarm is set to " + tester.alarmClock(7, false) + " am tomorrow morning.");
+        System.out.println("We love 6, is there a 6 in the house? " + tester.love6(2, 6));
+        System.out.println("Are we on outside mode? " + tester.in1To10(8, true));
+    }
+
     /*1
      * When squirrels get together for a party, they like to have cigars.
      * A squirrel party is successful when the number of cigars is between 40 and 60,

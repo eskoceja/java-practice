@@ -1,6 +1,18 @@
 package CodingBat;
 
 public class WarmUp1 {
+
+    public static void main(String[] args) {
+        //testing
+        WarmUp1 tester = new WarmUp1();
+
+        System.out.println("Do I get to sleep in today? (5/19/23): " + tester.sleepIn(true, false));
+        System.out.println("Are we in trouble with the monkeys' moods? " + tester.monkeyTrouble(false, false));
+        System.out.println("What is the sum of 3 and 4? " + tester.sumDouble(3, 4));
+        System.out.println("This one will double the difference from my age (28) to 21: " + tester.diff21(28) );
+        System.out.println("Should the parrot be talking right now? " + tester.parrotTrouble(true, 17));
+    }
+
     /*1.
      * The parameter weekday is true if it is a weekday,
      * and the parameter vacation is true if we are on vacation.
