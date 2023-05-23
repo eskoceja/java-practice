@@ -1,5 +1,7 @@
 package LibraryManagementPt2;
 
+import java.time.LocalDate;
+
 public class Book {
     private String title;
     private String author;
@@ -7,6 +9,7 @@ public class Book {
     private int pages;
     private String category;
     private boolean isOnLoan;
+    private LocalDate dueDate;
 
     public Book() {}
 
@@ -58,4 +61,14 @@ public class Book {
     public String toString() {
         return "[Title: " + getTitle() + ", Author: " + getAuthor() + ", Year Published: " + getPublicationYear() + ", Number Of Pages: " + getPages() + "]";
     }
+
+    //due date logistics
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
+
 }

@@ -1,6 +1,7 @@
 package LibraryManagementPt2;
 
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,11 +86,9 @@ public class Main {
         library.returnBook("The Diary Of A Young Girl", "37482342");
 
         //late fees
-        user1.hasBook(book5);
-        book5.setOnLoan(true);
-
-        System.out.println(user1.accrueLateFee(20));
-
+        Book loanedBook = user2.getOnLoan().get(0);
+        LocalDate dueDate = loanedBook.getDueDate();
+        System.out.println("Due date for loaned book: " + dueDate);
 
     }
 }

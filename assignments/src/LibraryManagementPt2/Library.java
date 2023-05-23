@@ -1,6 +1,7 @@
 package LibraryManagementPt2;
 
 import javax.swing.text.html.Option;
+import java.time.LocalDate;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -73,6 +74,12 @@ public class Library {
         User user = users.get(libraryCardNumber);
 
         if(book != null && user != null && !book.isOnLoan() && !user.reachedLoanLimit()) {
+           //calculate due date in 2 weeks
+            LocalDate dueDate = LocalDate.now().plusWeeks(2);
+
+            //set that due date
+            book.setDueDate(dueDate);
+
             book.setOnLoan(true);
             user.addBook(book);
             System.out.println("Book " + title + " has been loaned to user, " + user.getName());
