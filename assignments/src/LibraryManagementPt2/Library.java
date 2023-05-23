@@ -24,36 +24,36 @@ public class Library {
                 book);
     }
 
-    //removeBook
+    //removeBook using predicate func
     public void removeBook(String title) {
         library.removeIf(book -> book.getTitle().equals(title));
     }
 
-    //find books by year published
+    //find books by year published using predicate func
     public List<Book> findByYear(int year) {
         return library.stream().filter(book -> book.getPublicationYear() == year)
                 .collect(Collectors.toList());
     }
 
-    //find book by author
+    //find book by author using predicate func
     public List<Book> findByAuthor(String author) {
         return library.stream().filter(book -> book.getAuthor().equals(author))
                 .collect(Collectors.toList());
     }
 
-    //find book with most pages
+    //find book with most pages function to get max num of pages
     public Book findBookWithMostPages() {
         Optional<Book> maxPages = library.stream().max(Comparator.comparing(Book::getPages));
         return maxPages.orElse(null);
     }
 
-    //find book with more than n pages
+    //find book with more than n pages using predicate func
     public List<Book> findByPageCount(int pageCount) {
         return library.stream().filter(book -> book.getPages()> pageCount)
                 .collect(Collectors.toList());
     }
 
-    //sortAlphabetically
+    //sortAlphabetically using function
     public List<String> sortAlphabetically() {
         List<String> sortedTitles = new ArrayList<>();
         library.forEach(book -> sortedTitles.add(book.getTitle()));

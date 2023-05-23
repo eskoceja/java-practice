@@ -84,6 +84,12 @@ public class Main {
 
         library.returnBook("The Diary Of A Young Girl", "37482342");
 
+        //late fees
+        user1.hasBook(book5);
+        book5.setOnLoan(true);
+
+        System.out.println(user1.accrueLateFee(20));
+
 
     }
 }

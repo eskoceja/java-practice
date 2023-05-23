@@ -48,8 +48,9 @@ public class User {
     }
 
     //late fees
-    public void accrueLateFee(double fee) {
+    public double accrueLateFee(double fee) {
         lateFee += fee;
+        return lateFee;
     }
 
 }
