@@ -8,11 +8,11 @@ public class Regex {
 
 //      Write a regular expression to match a valid email address.
         String email = "This statement contains an email username@email.com";
-        String emailRegex = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z | a-z]{2,}\\b";
+        String emailRegex = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z |a-z]{2,}\\b";
         Pattern emailPattern = Pattern.compile(emailRegex);
         Matcher emailMatcher = emailPattern.matcher(email);
 
-        if(emailMatcher.find()) {
+        if (emailMatcher.find()) {
             System.out.println("Email: " + emailMatcher.group());
         } else {
             System.out.println("Invalid email");
@@ -24,7 +24,7 @@ public class Regex {
         Pattern phonePattern = Pattern.compile(phoneRegex);
         Matcher phoneMatcher = phonePattern.matcher(phone);
 
-        if(phoneMatcher.find()) {
+        if (phoneMatcher.find()) {
             System.out.println("Phone Number: " + phoneMatcher.group());
         } else {
             System.out.println("Invalid phone number");
@@ -36,7 +36,7 @@ public class Regex {
         Pattern datePattern = Pattern.compile(dateRegex);
         Matcher dateMatcher = datePattern.matcher(date);
 
-        if(dateMatcher.find()) {
+        if (dateMatcher.find()) {
             System.out.println("Date: " + dateMatcher.group());
         } else {
             System.out.println("invalid date");
@@ -48,7 +48,7 @@ public class Regex {
         Pattern urlPattern = Pattern.compile(urlRegex);
         Matcher urlMatcher = urlPattern.matcher(url);
 
-        if(urlMatcher.find()) {
+        if (urlMatcher.find()) {
             System.out.println("URL: " + urlMatcher.group());
         } else {
             System.out.println("Invalid URL");
@@ -60,7 +60,7 @@ public class Regex {
         Pattern creditCardPattern = Pattern.compile(creditCardRegex);
         Matcher creditCardMatcher = creditCardPattern.matcher(creditCard);
 
-        if(creditCardMatcher.find()) {
+        if (creditCardMatcher.find()) {
             System.out.println("Credit Card Number: " + creditCardMatcher.group());
         } else {
             System.out.println("Invalid credit card number");
@@ -72,7 +72,7 @@ public class Regex {
         Pattern zipCodePattern = Pattern.compile(zipCodeRegex);
         Matcher zipCodeMatcher = zipCodePattern.matcher(zipCode);
 
-        if(zipCodeMatcher.find()) {
+        if (zipCodeMatcher.find()) {
             System.out.println("Zip Code: " + zipCodeMatcher.group());
         } else {
             System.out.println("Invalid zip code");
@@ -84,7 +84,7 @@ public class Regex {
         Pattern javaIdPattern = Pattern.compile(javaIdRegex);
         Matcher javaIdMatcher = javaIdPattern.matcher(javaId);
 
-        if(javaIdMatcher.matches()) {
+        if (javaIdMatcher.matches()) {
             System.out.println("Java Identifier: " + javaIdMatcher.group());
         } else {
             System.out.println("Invalid input");
@@ -96,7 +96,7 @@ public class Regex {
         Pattern hexiColorPattern = Pattern.compile(hexaColorRegex);
         Matcher hexiColorMatcher = hexiColorPattern.matcher(hexaColor);
 
-        if(hexiColorMatcher.find()) {
+        if (hexiColorMatcher.find()) {
             System.out.println("Hexadecimal Color Code: " + hexiColorMatcher.group());
         } else {
             System.out.println("Invalid hexadecimal color code");
@@ -108,7 +108,7 @@ public class Regex {
         Pattern timePattern = Pattern.compile(timeRegex);
         Matcher timeMatcher = timePattern.matcher(time);
 
-        if(timeMatcher.find()) {
+        if (timeMatcher.find()) {
             System.out.println("Time: " + timeMatcher.group());
         } else {
             System.out.println("Invalid time");
