@@ -11,7 +11,6 @@ public class Regex {
         String emailRegex = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z |a-z]{2,}\\b";
         Pattern emailPattern = Pattern.compile(emailRegex);
         Matcher emailMatcher = emailPattern.matcher(email);
-
         if (emailMatcher.find()) {
             System.out.println("Email: " + emailMatcher.group());
         } else {
@@ -23,7 +22,6 @@ public class Regex {
         String phoneRegex = "\\(\\d{3}\\) \\d{3}-\\d{4}$";
         Pattern phonePattern = Pattern.compile(phoneRegex);
         Matcher phoneMatcher = phonePattern.matcher(phone);
-
         if (phoneMatcher.find()) {
             System.out.println("Phone Number: " + phoneMatcher.group());
         } else {
