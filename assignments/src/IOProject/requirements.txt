@@ -1,0 +1,33 @@
+Design a simple file manager application that allows users to perform the following tasks:
+
+1. Display the contents of a specified directory, including file names, file sizes, and last modified dates
+    a. get path - DirectoryStream<Path>
+    b. get name - BasicFileAttribute?
+    c. get size - .size();
+    d. get date - DateTimeFormatter
+    e. display info - sout
+    f. determine if file or dir - .isDirectory();
+
+2. Copy, move, and delete files within the specified directory
+    a. .copy(file, newFile/dir, StandardCopyOption.REPLACE_EXISTING);
+    b. .move(file, newFile/dir, StandardCopyOption.REPLACE_EXISTING);
+    c. .delete(file);
+
+3. Create and delete directories within the specified directory
+    a. .create(dir);
+    b. .delete(dir);
+
+4. Search for files within the specified directory based on file name or extension
+    a. .getFileName();
+    b. findByExtension -
+
+5. Implement a user interface (CLI or GUI) to allow users to select options and display the results
+    a. For Command Line Interface: Scanner
+    b. to select options: menu
+    c. display: sout
+
+6. Implement proper exception handling and logging
+    a. try/catch
+
+7. Organize the project using best practices, such as proper code organization, modularity, and documentation
+    a. methods for all the options to call into main method
