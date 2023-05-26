@@ -19,13 +19,13 @@ public class Main {
             Set<Integer> set1 = readIntegersFromFile(inputFile1);
             Set<Integer> set2 = readIntegersFromFile(inputFile2);
 
-            //Set for merging because with .retailAll it only takes what is duplicated
-            Set<Integer> commonSet = new HashSet<>(set1);
-            commonSet.retainAll(set2);
+            //Set for merging because with .retailAll it only takes what is duplicated from another list
+            Set<Integer> commonSet = new HashSet<>(set1);   //taking in list
+            commonSet.retainAll(set2);  //taking in only what is duplicated
 
-            //to display the merging a list will not remove duplicates
-            List<Integer> mergeSet = new ArrayList<>(set1);
-            mergeSet.addAll(set2);
+            //to display the merging a list will not remove duplicates - just because I also wanted it in the console
+            List<Integer> mergeSet = new ArrayList<>(set1); //taking in list
+            mergeSet.addAll(set2);  //adding second list in to merge - just like what it is actually doing
 
             //printing sets to new file
             writeSetToFile(commonSet, commonFile);
@@ -77,7 +77,7 @@ public class Main {
                 writer.newLine();
             }
             for (Integer num : set2) {
-                if (!set1.contains(num)) {
+                if (!set1.contains(num)) {  //bc sets remove duplicates, we have to make it to write the duplicates any way
                     writer.write(num.toString());
                     writer.newLine();
                 }
