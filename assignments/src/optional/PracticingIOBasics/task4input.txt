@@ -1,0 +1,3 @@
+Create a Java program that uses InputStreamReader and OutputStreamWriter.
+The program should read from a .txt file using InputStreamReader, convert the read data into uppercase,
+and then write the uppercase data to another .txt file using OutputStreamWriter.

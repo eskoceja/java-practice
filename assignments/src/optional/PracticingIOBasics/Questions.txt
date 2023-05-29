@@ -1,0 +1,53 @@
+Questions:
+
+1. What is I/O in the context of Java? Provide some common use cases for I/O in Java.
+
+In the context of Java, I/O is Input/Output. It is the process of transferring data between a program and external
+sources or destinations. Some common uses of I/O are:
+    a) reading data from files, databases, or APIs
+    b) writing data to files, databases, or APIs
+    c) Sending and receiving data over a network
+    d) communicating with hardware devices
+
+2. What are InputStream and OutputStream in Java, and what are their primary purposes?
+
+An InputStream is used to read data from a source and an OutputStream is used to write data from a source. These two are
+the base classes for all streams (abstract), meaning that they can't be instantiated directly into the main method. They
+can however, use its subclasses, such as: FileInputStream and FileOutputStream. One of their primary purpose is to read and
+write by byte into files.
+
+3. What are the benefits of using buffered I/O streams in Java?
+
+Because reading and writing data byte by byte can be time-consuming, Java also provides buffered streams: BufferedInputStream
+and BufferedOutputStream. Using buffered streams allow I/O operations to work faster. They set up a buffer (large chunk of data)
+in memory and read and write in those blocks of data, rather than reading/writing a single byte at a time. This helps
+when working with large amounts of data, a lot of files, or networks.
+
+4. What is the purpose of InputStreamReader and OutputStreamWriter in Java, and when should they be used?
+
+InputStreamReader and OutputStreamWriter bridge classes that convert byte streams to character streams. InputStreamReader
+reads bytes and decodes them into characters using a specified charset (character set). The charset can be specified by
+name or may be given explicitly. The OutputStreamWriter writes characters to bytes, also using a specified charset. That
+is why these should be used when trying to read or convert files from chars to bytes or vise versa.
+
+5. Describe the difference between FileInputStream and FileReader, and between FileOutputStream and FileWriter.
+
+FileReader and FileWriter are classes used to read and write text files. These classes are character-oriented and preform
+I/O operations with character strings. FileInputStream and FileOutputStream are byte-oriented stream classes, working
+better with smaller amounts of data.
+
+6. What are BufferedReader and BufferedWriter used for in Java?
+
+BufferedReader and BufferedWriter are used to buffer character input and output streams. This improves the performance of
+I/O operations by decreasing the number of system calls needed to read or write data.
+
+7. What are DataInputStream and DataOutputStream, and what unique functionality do they provide?
+
+DataInputStreams and DataOutputStreams are classes that allow you to read and write  primitive data types in Java. They
+extend from FileInputStreams and FileOutputStreams, which allows them to read/write in a machine-independent way.
+
+8. Explain the concept of object serialization in Java. Why is it important, and in what scenarios might it be used?
+
+Object serialization is important for a persisting state because you can store the state of an object ina file or database
+and retrieve it at a later time. It is also important for network communication because objects may need to be used across
+networks. Serialization allows you to convert and Object into a format that can easily be sent through a network.

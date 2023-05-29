@@ -1,0 +1,7 @@
+Create a Java program that reads a file containing lines of text and performs various text processing operations
+using lambda expressions and functional interfaces. The program should:
+
+1. Count the number of lines in the file.
+2. Count the number of words in the file.
+3. Find the longest word in the file.
+4. Sort the words in alphabetical order and store the results in a new file.

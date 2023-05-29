@@ -1,0 +1,4 @@
+Write a Java program that uses FileReader and FileWriter to read a .txt file
+and write its content to another .txt file in reverse order
+(i.e., the input file's last line becomes the output file's first line).
+
