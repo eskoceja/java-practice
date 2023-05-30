@@ -1,6 +1,7 @@
 package Algorithms;
 import java.util.Arrays;
-/*This is a function problem. You only need to complete the function countSort()
+/*OPTIONAL:
+This is a function problem. You only need to complete the function countSort()
 that takes string arr as a parameter and returns the sorted string.
 The printing is done by the driver code.*/
 public class CountingSort {

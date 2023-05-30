@@ -1,7 +1,7 @@
 package Algorithms;
 import java.util.ArrayList;
 
-/*OPTIONAL:
+/*OPTIONAL BONUS:
 You don't need to read input or print anything.
 Your task is to complete the function search() which takes
 the string S and the string pat as inputs and returns an array
